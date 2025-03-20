@@ -22,7 +22,6 @@ def option_menu():
 
     choice = input()
 
-    # Validate choice input
     while choice not in ["1", "2", "3", "4", "5"]:
         print("Invalid selection, please try again.")
         choice = input()
