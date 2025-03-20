@@ -39,7 +39,6 @@ def main():
         tree = Tree("Oak", "Green", str(random.randint(5, 100)) + " inches", "A big oak tree", "Large")
         trees.append(tree)
 
-
     for tree in trees:
         tree.info()
 

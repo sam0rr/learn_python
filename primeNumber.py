@@ -42,29 +42,26 @@ def ask_number():
 def main():
     while True:
         print("\nPrime tester :\n")
-        choice = 0
 
-        while choice not in [1, 2, 3]:
+        choice = None
+
+        while choice not in ["1", "2", "3"]:
             print(f"1-   Tester tous les nombres premiers ({max_number})")
             print("2-   Tester un nombre")
             print("3-   Quitter")
 
-            try:
-                choice = int(input())
-            except ValueError:
-                print("\nEntrée invalide ! Veuillez entrer un nombre valide.")
+            choice = input("choix : ")
+            if choice not in ["1", "2", "3"]:
+                print("Entrer un nombre valide")
 
-            if choice not in [1, 2, 3]:
-                print("\nChoix invalide ! Veuillez entrer 1, 2 ou 3.")
-
-        if choice == 3:
+        if choice == "3":
             print("\n\nE N D.")
             return
 
-        if choice == 1:
+        if choice == "1":
             up_to()
 
-        if choice == 2:
+        if choice == "2":
             one_number()
 
 if __name__ == '__main__':

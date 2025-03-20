@@ -56,6 +56,5 @@ def main():
 
     print(f"Voici votre mot de passe : {password}")
 
-
 if __name__ == '__main__':
     main()
